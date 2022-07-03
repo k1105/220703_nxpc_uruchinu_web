@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-export const ThumbnailContainer = (props) => {
-  console.log(props.num);
+export const ThumbnailContainer = ({ num }) => {
   return (
     <div>
       <Container>
         <Thumbnail src={`${process.env.PUBLIC_URL}/thumbnail/1.jpg`} />
         <Quality>1080p</Quality>
-        <Title>{`汗だく！汁だく！その${props.num}`}</Title>
+        <Title>{`汗だく！汁だく！その${num}`}</Title>
         <Information>
           <Uploader>uploader</Uploader>
           <Viewer>2.1M</Viewer>
